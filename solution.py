@@ -1,14 +1,11 @@
 #!/usr/bin/env python
 import util
 
-# The number of letters associated with each number on a phone pad in order.
-starting_value = [0, 0] + [3 for i in range(5)] + [4, 3, 4]
-
 # The ith entry of the following list contains the sum of the 0 to i-1th entries
 # in starting value. We want to calculate these values because this will be the
 # numeral associated with the first letter that maps to i on a phone dial pad.
 def get_partial_sums(number_list):
-	return [sum(starting_value[:i]) for i in range(len(number_list)+1)]
+	return [sum(number_list[:i]) for i in range(len(number_list)+1)]
 
 # The end of the range of the ith number will be the start of the i+1th, thus
 # we zip all the values together yielding tuples of the form
