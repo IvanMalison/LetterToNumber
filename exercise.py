@@ -52,13 +52,12 @@ def get_letter_to_number_from_character_lists(character_lists):
 
 generate_letter_to_number_with_prints = util.build_generate_letter_to_number_with_prints(globals())
 
-functions_to_test = {
-	func_name: func for func_name, func in vars().iteritems()
-	if func_name[:4] == "get_"
-}
-import ipdb; ipdb.set_trace()
 
 if __name__ == '__main__':
+	functions_to_test = {
+		func_name: func for func_name, func in vars().iteritems()
+		if func_name[:4] == "get_"
+	}
 	import test
 	test.test_functions(functions_to_test)
 	generate_letter_to_number_with_prints(util.starting_value)
