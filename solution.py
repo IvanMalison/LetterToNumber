@@ -52,7 +52,7 @@ def get_letter_to_number_from_character_lists(character_lists):
 		for letter in letters
 	}
 
-generate_letter_to_number_with_prints = util.build_generate_letter_to_number_with_prints(globals())
+generate_letter_to_number_with_prints = util.build_generate_letter_to_number_with_prints(vars())
 
 if __name__ == '__main__':
 	util.test_generate_letter_to_number_with_prints(
