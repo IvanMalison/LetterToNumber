@@ -12,7 +12,7 @@ def get_partial_sums(number_list):
 	return number_list
 
 def get_range_tuples(increasing_list):
-	"""Return a list whose ith entry of the output is the tuple
+	"""Return a list whose ith entry of is the tuple
 	(increasing_list[i], increasing_list[i+1]).
 
 	Ex: get_range_tuples([1, 5, 7, 10]) == [(1, 5), (5, 7), (7, 10)]
@@ -23,6 +23,7 @@ def get_ranges_from_range_tuples(range_tuples):
 	"""For each (start, end) entry in `range_tuples` there should be a
 	corresponding list of integers starting at `start` and ending at `end` - 1.
 	in the list that is the output of this function.
+	Note:
 	To get the list [1, 2, 3] from (1,4) you might use the function range(1, 4)
 	Note that this would require you to expand the entries of the tuple.
 
