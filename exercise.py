@@ -51,6 +51,7 @@ def get_letter_to_number_from_character_lists(character_lists):
 	"""
 	return character_lists
 
+
 generate_letter_to_number_with_prints = util.build_generate_letter_to_number_with_prints(globals())
 
 
