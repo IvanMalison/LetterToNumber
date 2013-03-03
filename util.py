@@ -3,6 +3,7 @@ import sys
 
 # The number of letters associated with each number on a phone pad in order.
 starting_value = [0, 0] + [3 for i in range(5)] + [4, 3, 4]
+BAR = "----------------------------------------------------------------------------------------------------"
 
 
 def compose(g, f):

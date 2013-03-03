@@ -1,4 +1,5 @@
 import solution
+import util
 
 
 solution_function_to_test_value_map = {
@@ -22,3 +23,4 @@ def test_functions(functions_dict):
 			print "Failed"
 			print "Expected Output: %s" % str(solution_value)
 			print "Actual Output: %s" % str(actual_value)
+		print util.BAR
